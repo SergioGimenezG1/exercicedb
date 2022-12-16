@@ -1,0 +1,12 @@
+resource:
+  path:
+    currency-server: http://currency.com
+spring:
+  datasource:
+    jdbcUrl: jdbc:postgresql://localhost:5432/exercicedb?serverTimezone=UTC
+    password: 1234
+    username: root
+  flyway:
+    placeholderReplacement: false
+    ignore-missing-migrations: true
+    locations: classpath:db/migration/local
